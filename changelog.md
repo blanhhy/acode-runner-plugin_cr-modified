@@ -1,5 +1,10 @@
 # ChangeLogs
 
+## `v1.0.6`
+
+- feat: compatibility with click-run api
+- fix: wrong listener removal logic
+
 ## `v1.0.5`
 
 - feat: add `dart` support

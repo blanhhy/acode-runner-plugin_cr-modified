@@ -177,6 +177,23 @@ export default class LanguageRunners {
 	}
 
 	/**
+	 * Check if a specific runner can run the file
+	 */
+	canRunWith(id, filename) {
+		if (!filename) return false;
+		if (filename.startsWith('Run: ')) return false;
+
+		const runner = this.#runners.get(id);
+		if (!runner) return false;
+
+		const lastDot = filename.lastIndexOf('.');
+		if (lastDot === -1) return false;
+
+		const extension = filename.substring(lastDot + 1).toLowerCase();
+		return runner.extensions.includes(extension);
+	}
+
+	/**
 	 * Run file using appropriate language runner
 	 */
 	async runFile(file) {

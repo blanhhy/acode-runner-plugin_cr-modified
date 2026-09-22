@@ -6,6 +6,9 @@ A powerful code runner plugin for Acode that adds a **play button** to execute d
 > Ensure Acode's built-in terminal is configured(setup) before using this plugin, otherwise the run button will not appear.
 > To enable: open Acode → Menu(three dots) → Terminal, then it will start installation if not installed. Restart Acode if the run button doesn't show after that.
 
+> [!Note]
+> If [Click Run](https://github.com/blanhhy/acode-plugin-click-run) is installed, the language runners are registered into its single play button instead of adding their own, so a project runner and a language runner can share one menu. Without Click Run the plugin falls back to its own play button.
+
 ## ✨ Features
 
 - **🎯 One-Click Execution** - Simply click the play button to run your code
